@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="front.css" />
     <script src="https://kit.fontawesome.com/80e2906028.js" crossorigin="anonymous"></script>
   </head>
@@ -15,11 +20,18 @@
         </video>
         <div class="nav-container">
           <nav>
-            <div class="logo">HospitalName</div>
+            <div class="logo">REHOBOTH</div>
             <div class="hamburger" onclick="toggleMenu()">☰</div>
             <div class="nav-links" id="menu">
               <a href="index.html">Home</a>
-              <a href="#">About</a>
+              <div class="dropdown">
+                <a href="#">About ▾</a>
+                <div class="dropdown-content">
+                  <a href="#">Our Story</a>
+                  <a href="#">Team</a>
+                  <a href="#">Mission & Vision</a>
+                </div>
+              </div>
               <a href="#">Treatments</a>
               <a href="#">Facilities</a>
               <a href="#">Blog</a>
@@ -47,7 +59,7 @@
 
     <section class="about">
       <div class="about-container">
-        <div class="dad-img"></div>
+        <div class="dad-img"><img src="daddy image.jpg" alt="" /></div>
         <div class="about-content">
           <h1>
             About the founder
@@ -90,7 +102,7 @@
                 alt="" />
             </div>
 
-            <div>
+            <div class="misis">
               <h1 class="miss">Our Mission</h1>
               <p class="miss">To Bring Sense to every healing and bring harmony to every sense</p>
             </div>
@@ -104,7 +116,7 @@
     </section>
 
     <section class="content">
-      <div>
+      <div class="holding">
         <div class="cont-holder">
           <div class="con-img">
             <img src="physician-uses-otoscope-young-man.jpg" alt="" srcset="" />
@@ -126,6 +138,10 @@
         </div>
 
         <div class="cont-holder">
+          <div class="con-img">
+            <img src="patient-getting-anesthesia-high-angle.jpg" alt="" srcset="" />
+          </div>
+
           <div class="cont-text">
             <h1 style="margin-bottom: 30px; color: rgb(44, 44, 221)">Nose Treatment</h1>
             <p>
@@ -141,10 +157,6 @@
               <strong>effective results.</strong>
             </p>
             <a href=""><button class="learn">Learn More</button></a>
-          </div>
-
-          <div class="con-img">
-            <img src="patient-getting-anesthesia-high-angle.jpg" alt="" srcset="" />
           </div>
         </div>
 
@@ -175,19 +187,13 @@
         </div>
       </div>
 
-      <div
-        style="
-          height: 60vh;
-          background-image: url(https://indorewala.com/wp-content/uploads/2025/04/abstract-seamless-geometric-shape-lines-pattern-design-background.png);
-          background-size: cover;
-          background-color: rgba(9, 44, 109, 0.836);
-          margin-bottom: 150px;
-        ">
+      <div class="helsing">
         <div
           class="header-content"
+          id="libble"
           style="
-            height: 60vh;
-            background-image: url(https://indorewala.com/wp-content/uploads/2025/04/woman-working-as-doctor.png);
+            max-height: 60vh;
+            height: 100%;
             background-position: right;
             background-size: contain;
             background-repeat: no-repeat;
@@ -212,7 +218,9 @@
         </div>
       </div>
 
-      <div class="header-content" style="height: 50vh; border-top: 2px solid black">
+      <div
+        class="header-content"
+        style="height: 50vh; border-top: 2px solid black; text-align: center">
         <h2 style="margin-bottom: 20px; color: black; font-size: 40px">
           Build Your Career With Us
         </h2>
@@ -275,6 +283,13 @@
       function toggleMenu() {
         document.getElementById("menu").classList.toggle("active");
       }
+      const dropdown = document.querySelector(".dropdown > a");
+      dropdown.addEventListener("click", function (e) {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          this.parentElement.classList.toggle("open");
+        }
+      });
     </script>
   </body>
 </html>
