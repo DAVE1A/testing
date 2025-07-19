@@ -345,6 +345,7 @@ nav {
   background-color: #020a18;
   color: white;
   gap: 150px;
+
 }
 
 .footer-logo ul li {
@@ -494,7 +495,7 @@ nav {
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
   .miss {
     width: 425px;
     font-size: 23px;
