@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="front.css" />
+    <script src="https://kit.fontawesome.com/80e2906028.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="header-container">
+        <!-- <video autoplay muted loop class="viddd">
+          <source src="col.mp4" type="video/mp4" />
+        </video> -->
+        <div class="nav-container">
+            <nav>
+                <div class="logo">REHOBOTH</div>
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <div class="nav-links" id="menu">
+                    <a href="index.html">Home</a>
+                    <div class="dropdown">
+                        <a href="#" class="okaydidnt">
+                            About
+                            <i class="fa-solid fa-fade fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#">Our Story</a>
+                            <a href="#">Team</a>
+                            <a href="#">Mission & Vision</a>
+                        </div>
+                    </div>
+                    <div class="dropdown2">
+                        <a class="okaydidnt2">
+                            Services
+                            <i class="fa-solid fa-fade fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown-content2">
+                            <a href="treatments.html">Theatre</a>
+                            <a href="">Otology</a>
+                            <a href="">Rhinology</a>
+                            <a href="">Laryngology</a>
+                            <a href="">Pediatric E.N.T</a>
+                            <a href="#">Audiology</a>
+                            <a href="#">Integrated Services</a>
+                        </div>
+                    </div>
+                    <a href="#">Facilities</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+        </div>
+
+        <header class="head3">
+            <div class="the-contact-header">
+                <h1>Contact Us</h1>
+                <p>Please feel free to contact our team for any kind of support you need. We will get back to you at the
+                    earliest.</p>
+            </div>
+        </header>
+
+        <section class="bord-sec">
+            <div class="borderrs">
+                <div class="bord">
+                    <div class="inside-contact">
+                        <h1>
+                            Send Us A Message
+                        </h1>
+                        <p>Thank you for taking time to visit our site. We, at Indorewala ENT Hospital, institute &
+                            Research Centre, take intense care to help our patients.</p>
+                    </div>
+                    <form action="">
+                        <div class="form-container">
+                            <div class="form-name">
+                                <label for="">Name </label>
+                                <div class="gasp">
+                                    <input type="text" placeholder="Enter your first name" required>
+                                    <input type="text" placeholder="Enter your last name" required>
+                                </div>
+                            </div>
+
+                            <div class="frm">
+                                <label for="">Phone Number</label>
+                                <input type="number" placeholder="Enter your number" required>
+
+                            </div>
+
+                            <div class="frm">
+                                <label for="">Email</label>
+                                <input type="email" placeholder="Enter your Email" required>
+
+                            </div>
+
+                            <div class="frm">
+                                <label for="">Subject</label>
+                                <input type="text" placeholder="Enter Subject (optional)">
+
+                            </div>
+
+                            <div class="frm">
+                                <textarea name="" id="" rows="10" placeholder="Enter Feedback"
+                                    style="max-width: 500px; width: 90%;"></textarea>
+                            </div>
+
+                            <button>Submit Form</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="appoint-holding">
+                    <div class="appoint-contain">
+                        <ul>
+                            <i class="fa-solid fa-phone fa-xl"></i>
+                            <h2>Appointment</h2>
+                            <li>
+
+                                +2348038122154
+                            </li>
+                            <li> +2348068830318</li>
+                        </ul>
+
+                        <ul>
+                            <i class="fa-solid fa-xl fa-envelope"></i>
+                            <h2>Email Us</h2>
+                            <li>
+
+                                rehobothhospitala@gmail.com
+                            </li>
+                            <li> doctadedjitaiwo@gmail.com</li>
+                        </ul>
+                    </div>
+
+                    <div class="upper-loc">
+                        <div class="under-loc">
+                            <i class="fa-solid fa-xl fa-location-dot"></i>
+                            <h2>Our Location</h2>
+                            <p>Near Niyi Ibikunle Factory, opposite Leisure Springs Hotel, Osogbo 230103, Osun State,
+                                Nigeria.</p>
+                        </div>
+                        <img src="interior-view-operating-room.jpg" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="copy-right">
+                <div class="copri">
+                    <p>Copyright © 2025 Rehoboth ENT Hospital | Powered by Rehoboth ENT Hospital</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-facebook fa-xl"></i>
+                    <i class="fa-brands fa-square-instagram fa-xl"></i>
+                    <i class="fa-brands fa-linkedin fa-xl"></i>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            function toggleMenu() {
+                document.getElementById("menu").classList.toggle("active");
+            }
+            const dropdown = document.querySelector(".dropdown > a");
+            dropdown.addEventListener("click", function (e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    this.parentElement.classList.toggle("open");
+                }
+            });
+        </script>
+</body>
+
+</html>

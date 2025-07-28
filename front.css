@@ -5,16 +5,6 @@
   font-family: "Playfair Display", serif;
 }
 
-html,
-body {
-  overflow-x: hidden;
-}
-
-html,
-body {
-  overflow-x: hidden;
-}
-
 nav {
   padding: 0 15px;
   display: flex;
@@ -48,10 +38,9 @@ nav {
   display: flex;
   align-items: center;
   gap: 20px;
-  
   font-size: 20px;
   transition: max-height 0.3s ease-in-out;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .nav-links a {
@@ -65,7 +54,7 @@ nav {
   color: black;
 }
 
-.dropdown{
+.dropdown {
   height: 60px;
   display: flex;
   align-items: center;
@@ -91,14 +80,12 @@ nav {
   text-decoration: none;
 }
 
-
-
 .dropdown:hover .dropdown-content {
   display: block;
   flex-direction: column;
 }
 
-.dropdown2{
+.dropdown2 {
   height: 60px;
   display: flex;
   align-items: center;
@@ -124,8 +111,6 @@ nav {
   text-decoration: none;
 }
 
-
-
 .dropdown2:hover .dropdown-content2 {
   display: block;
   flex-direction: column;
@@ -143,7 +128,6 @@ nav {
   align-items: center;
   justify-content: center;
   height: 100vh;
- 
 }
 
 .header-content p {
@@ -372,7 +356,6 @@ nav {
   background-color: #020a18;
   color: white;
   gap: 150px;
-
 }
 
 .footer-logo ul li {
@@ -400,8 +383,8 @@ nav {
   background-color: rgba(9, 44, 109, 0.836);
   margin-bottom: 150px;
 }
- /* the treatment section begins */
-.head2-container{
+/* the treatment section begins */
+.head2-container {
   background-image: url(interior-view-operating-room.jpg);
   background-size: cover;
   height: 80vh;
@@ -410,7 +393,7 @@ nav {
   align-items: center;
 }
 
-.head2-content{
+.head2-content {
   margin-left: 6%;
   background-color: rgba(17, 60, 179, 0.712);
   backdrop-filter: 100%;
@@ -421,14 +404,14 @@ nav {
   width: 400px;
 }
 
-.spanish{
+.spanish {
   border-bottom: 2px solid white;
 }
 
-.spanish h1{
+.spanish h1 {
   margin-bottom: 15px;
 }
-.treat-about{
+.treat-about {
   max-width: 750px;
   width: 90%;
   padding-top: 50px;
@@ -442,33 +425,31 @@ nav {
   margin-bottom: 10px;
 }
 
-.theatre-display{
+.theatre-display {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  
 }
 
-.theatre-display img{
+.theatre-display img {
   max-width: 211px;
   width: 90%;
 }
 
-.C-mac{
+.C-mac {
   max-width: 750px;
   width: 95%;
   padding-top: 50px;
 }
 
-.C-mac p{
+.C-mac p {
   font-size: 18px;
   line-height: 2;
   color: rgb(94, 93, 93);
-  
 }
 
-.treatment-card{
+.treatment-card {
   height: 60%;
   max-width: 330px;
   width: 90%;
@@ -478,29 +459,211 @@ nav {
   background-color: rgba(17, 60, 179, 0.712);
 }
 
-.t-card-list ul li{
+.t-card-list ul li {
   display: flex;
   align-items: center;
   height: 60px;
   border-bottom: 1px solid white;
 }
 
-.t-card-list a{
+.t-card-list a {
   text-decoration: none;
   color: black;
   font-size: 18px;
 }
-.the-treats{
+.the-treats {
   display: flex;
   justify-content: center;
   gap: 50px;
   padding: 0 20px;
 }
 
-.theatre-images{
+.theatre-images {
   max-width: 760px;
   width: 100%;
 }
+
+.head3 {
+  display: flex;
+  justify-content: center;
+}
+
+.the-contact-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 50vh;
+  max-width: 60%;
+  width: 60%;
+}
+
+.the-contact-header h1 {
+  font-size: 70px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.the-contact-header p {
+  font-size: 17px;
+  color: rgb(124, 124, 124);
+  max-width: 340px;
+  width: 95%;
+}
+
+.inside-contact h1{
+  font-size: 42px;
+}
+
+.inside-contact p {
+  font-size: 18px;
+  color: rgb(124, 124, 124);
+  max-width: 500px;
+  width: 95%;
+}
+
+.form-container{
+ 
+  margin-top: 50px;
+}
+
+.form-container button{
+  max-width: 250px;
+  width: 90%;
+  height: 50px;
+  border: 1px solid #0066cc;
+  border-radius: 15px;
+  background-color: #054ed6;
+  color: white;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.form-container button:hover{
+  background-color: #044b92;
+  transition: 0.4s ease-in-out;
+}
+
+.form-name label{
+  font-size: 20px;
+}
+
+.form-name input{
+  height: 45px;
+  max-width: 225px;
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.frm{
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.frm input{
+  max-width: 500px;
+  width: 90%;
+  height: 45px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.appoint-contain{
+  display: flex;
+  justify-content: space-around;
+  
+}
+.appoint-holding{
+  margin-top: 30px;
+  max-width: 550px;
+  width: 90%;
+}
+
+.appoint-contain ul h2{
+  font-size: 20px;
+}
+
+
+.appoint-contain ul li{
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  color: #333;
+}
+
+.under-loc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 250px;
+  max-width: 550px;
+  width: 100%;
+  gap: 20px;
+  background-color: #083f75;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.under-loc h2{
+  font-size: 30px;
+}
+
+.under-loc p{
+  font-size: 17px;
+  color: white;
+}
+
+.upper-loc img{
+  width: 550px;
+  height: 300px;
+}
+
+.borderrs{
+  display: flex;
+  justify-content: center;
+  
+  padding: 15px;
+  gap: 20px;
+  background-color: rgb(255, 255, 252);
+  border: 1px solid gray;
+  border-radius: 15px;
+  
+}
+
+.bord{
+  max-width: 500px;
+  width: 100%;
+  
+}
+
+.bord-sec{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copy-right{
+  margin-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  background-color: white;
+  border-top: 1px solid grey;
+  justify-content: space-between;
+}
+
+.copri{
+  width: 400px;
+}
+
 
 @media only screen and (min-width: 1440px) {
   .header-content {
@@ -542,23 +705,19 @@ nav {
     text-align: center;
   }
 
-  .the-treats{
+  .the-treats {
     gap: 5px;
   }
-
-  
 }
 
-@media only screen and (max-width:800px){
-
-  .the-treats{
+@media only screen and (max-width: 800px) {
+  .the-treats {
     flex-direction: column;
-    
+
     align-items: center;
-    
   }
 
-  .theatre-images{
+  .theatre-images {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -566,29 +725,30 @@ nav {
     justify-content: center;
   }
 
-  
-  .theatre-display img{
+  .theatre-display img {
     max-width: 300px;
     width: 100%;
     flex-shrink: 1;
   }
 
-  .treatment-card{
-  height: 60%;
-  max-width: 650px;
-  width: 90%;
-  color: rgb(36, 36, 36);
-  margin-top: 30px;
-  padding: 20px;
-  background-color: rgba(17, 60, 179, 0.712);
-  margin-bottom: 20px;
-}
+  .treatment-card {
+    height: 60%;
+    max-width: 650px;
+    width: 90%;
+    color: rgb(36, 36, 36);
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(17, 60, 179, 0.712);
+    margin-bottom: 20px;
+  }
 
+  .under-loc{
+    width: 400px;
+  }
 
-
-
-
-
+  .upper-loc img{
+    width: 400px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -607,24 +767,24 @@ nav {
   }
 
   .dropdown-content {
- 
-  top: 25%;
- 
-}
+    top: 27%;
+  }
 
-.dropdown{
-  height: 23px;
-}
+  .dropdown {
+    height: 23px;
+  }
 
-.dropdown-content2 {
- 
-  top: 37%;
- 
-}
+  .dropdown-content2 {
+    top: 39%;
+  }
 
-.dropdown2{
-  height: 23px;
-}
+  .dropdown2:hover > .nav-links.active {
+    height: 100vh;
+  }
+
+  .dropdown2 {
+    height: 23px;
+  }
 
   .nav-links.active {
     display: flex;
@@ -689,6 +849,23 @@ nav {
   .footer-container {
     gap: 1%;
   }
+
+  .borderrs{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .appoint-holding{
+    width: 400px;
+  }
+  .appoint-contain ul{
+    width: 200px;
+  }
+
+  .upper-loc{
+    max-width: 400px;
+  }
+
 }
 
 @media only screen and (max-width: 630px) {
@@ -750,8 +927,63 @@ nav {
     width: 350px;
   }
 
-  .head2-content{
+  .head2-content {
     margin-left: 4%;
+  }
+
+  .copri p{
+    font-size: 14px;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width : 475px){
+  .the-contact-header h1{
+    font-size: 45px;
+    width: 300px;
+  }
+
+  .bord h1{
+    font-size: 30px;
+    width: 300px;
+  }
+  .bord p{
+    font-size: 15px;
+    width: 300px;
+  }
+
+  .borderrs{
+    width: 320px;
+  }
+
+  form{
+    width: 300px;
+  }
+
+  .form-container {
+    width: 300px;
+  }
+
+  .appoint-contain{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .upper-loc img{
+    width: 300px;
+  }
+
+  .upper-loc{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .under-loc{
+    width: 300px;
+    
   }
 }
 
@@ -821,14 +1053,22 @@ nav {
     width: 320px;
   }
 
-   .footer-container {
+  .footer-container {
     flex-direction: column;
     max-height: fit-content;
     height: 90%;
   }
 
-  .head2-content{
+  .head2-content {
     margin-left: 0;
+  }
+
+   .copri p{
+    width: 200px;
+  }
+
+  .copri{
+    width: 200px;
   }
 }
 
@@ -838,7 +1078,9 @@ nav {
     width: 100%;
   }
 
-  .head2-content{
+  .head2-content {
     width: 300px;
   }
+
+ 
 }
