@@ -23,7 +23,6 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-
   width: 100%;
   max-width: 100%;
 }
@@ -52,6 +51,7 @@ nav {
 
 .nav-links a:hover {
   color: black;
+  text-shadow: 7px 7px 7px rgba(206, 66, 66, 0.3);
 }
 
 .dropdown {
@@ -80,9 +80,19 @@ nav {
   text-decoration: none;
 }
 
+.dropdown-content a:hover, .dropdown-content2 a:hover{
+  background-color: #054ed6;
+  transition: 0.7s ease-in-out;
+  text-shadow: 7px 7px 7px rgba(206, 66, 66, 0.3);
+  color: white;
+  
+}
+
 .dropdown:hover .dropdown-content {
   display: block;
+
   flex-direction: column;
+
 }
 
 .dropdown2 {
@@ -113,6 +123,7 @@ nav {
 
 .dropdown2:hover .dropdown-content2 {
   display: block;
+ 
   flex-direction: column;
 }
 
@@ -348,33 +359,56 @@ nav {
   width: 250%;
 }
 
-.footer-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
+footer {
   background-color: #020a18;
   color: white;
-  gap: 150px;
+  padding: 8rem 5% 4rem;
 }
 
-.footer-logo ul li {
-  list-style: none;
-  font-size: 18px;
-  margin-bottom: 10px;
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5rem;
 }
 
 .footer-logo {
-  width: 300px;
-  border-right: 2px solid #0d58e4;
+  margin-bottom: 3rem;
 }
 
 .footer-icon {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 15px;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
+
+.footer-icon i {
+  font-size: 1.8rem;
+  color: #0066cc;
+}
+
+.footer-icon h2 {
+  font-size: 1.5rem;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  opacity: 0.8;
+  transition: var(--transition);
+}
+
+footer li:hover {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
 
 .helsing {
   height: 60vh;
@@ -768,6 +802,7 @@ nav {
 
   .dropdown-content {
     top: 27%;
+
   }
 
   .dropdown {
