@@ -308,9 +308,9 @@ nav {
 }
 
 .dad-img img {
+  max-width: 601px;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: var(--transition);
 }
 
